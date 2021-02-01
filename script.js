@@ -1,8 +1,8 @@
-const addBtn = document.getElementById('add')
+const addButton = document.getElementById('add')
 
-addBtn.addEventListener('click', () => addnewNote())
+addButton.addEventListener('click', () => addNewNote())
 
-functionAddNote (text = '') {
+function AddNewNote(text = '') {
   const note = document.createElement('div')
   note.classList.add('note')
 
@@ -11,9 +11,26 @@ functionAddNote (text = '') {
     <button class="edit"><i class="fas fa-edit"></i></button>
     <button class="delete"><i class="fas fa-trash-alt"></i></button>
   </div>
+
   <div class="main ${text ? "" : "hidden"}"></div>
   <textarea class="${text ? "hidden" : ""}"></textarea>
   `
+  
+  const editBtn = note.querySelector('.edit')
+  const deleetBtn = note.querySelector('.delete')
+  const main = note.querySelector('.main')
+  const textArea = note.querySelector('.textarea')
+
+  deleteBtn.addEventListener('click', () => {
+    note.remove()
+  })
+
+  editBtn.addEventListener('click', () => {
+    main.classList.toggle('hidden')
+    textArea.classList.toggle('hidden')
+  })
+
+  documment.body.appendChild(note)
 }
 
 // const textEl = document.getElementById('text')
