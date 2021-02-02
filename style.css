@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * { 
   box-sizing: border-box;
 }
 
 body { 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   height: 100vh;
   overflow: hidden;
@@ -45,10 +45,11 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
+  text-align: center;
 }
 
 .final.show {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
   animation: show 0.2s ease-out;
 }
 
@@ -57,7 +58,7 @@ h4 {
     transform: translate(-50%, -50%) scale(0);
   }
 
-  0% {
+  30% {
     transform: translate(-50%, -50%) scale(1.4);
   }
   
@@ -69,7 +70,7 @@ h4 {
 .nums {
   color: #3498db;
   font-size: 50px;
-  position: rrelative;
+  position: relative;
   overflow: hidden;
   width: 250px;
   height: 50px;
@@ -89,7 +90,7 @@ h4 {
 }
 
 .nums span.out {
-  animation: goIn 0.5s ease-in-out;
+  animation: goOut 0.5s ease-in-out;
 }
 
 @keyframes goIn {
