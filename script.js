@@ -22,8 +22,25 @@ function changeImage() {
       idx = img.length - 1
   }
 
-  img.style.transform = `translateX(${-idx * 500}px)`
+  imgs.style.transform = `translateX(${-idx * 500}px)`
 }
+
+function resetInterval() {
+  clearInterval(interval)
+  interval = setInterval(run, 2000)
+}
+
+rightBtn.addEventListener('click', () => {
+  idx++
+  changeImage()
+  resetInterval()
+})
+
+leftBtn.addEventListener('click', () => {
+  idx--
+  changeImage()
+  resetInterval()
+})
 
 // localStorage.setItem('name', JSON.stringify())
 // JSON.parse(localStorage.getItem('name'))
