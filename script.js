@@ -1,4 +1,15 @@
+const contents = document.querySelectorAll('.content')
+const listItems = document.querySelectorAll('nav ul li')
 
+listItems.forEach((item, idx) => {
+  item.addEventListener('click', () => {
+    hideAllContents()
+    hideAllItems()
+
+    item.classList.add('active')
+    contents[idx].classList.add('show')
+  })
+})
 
 // const container = document.getElementById('container')
 // const colors = ['#e74c3c', '8#44ad', '#3498db', '#e67e22', '#2ecc71']
