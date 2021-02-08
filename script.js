@@ -11,6 +11,14 @@ listItems.forEach((item, idx) => {
   })
 })
 
+function hideAllContents() {
+  contents.forEach(content => content.classList.remove('show'))
+}
+
+function hideAllItems() {
+  listItems.forEach(item => item.classList.remove('active'))
+}
+
 // const container = document.getElementById('container')
 // const colors = ['#e74c3c', '8#44ad', '#3498db', '#e67e22', '#2ecc71']
 // const SQUARES = 500
