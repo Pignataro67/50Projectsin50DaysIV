@@ -85,9 +85,9 @@ body {
   content: '';
   background-color: #f9ca24;
   position: absolute;
-  top: -15px;   
-  right: 8px;
+  bottom: -15px;   
+  left: 8px;
   height: 15px;
   width: 100%;
-  transform: skewY(45deg);
+  transform: skewX(45deg);
 }
