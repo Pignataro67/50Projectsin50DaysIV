@@ -33,6 +33,26 @@ body {
   opacity: 0.8;
 }
 
+.header {
+  background-color: #3e57db;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.header input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.header input:focus {
+  outline: none;
+}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
