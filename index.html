@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>3D Boxes Background</title>
+    <title>Verify Account</title>
   </head>
   <body>
-<div class="container">
-  <h2>Verify Your Account</h2>
-  <p>We emailed you the six digit code to cool_guy@email.com <br/> Enter the code below to confirm your email address.</p>
-  <div class="code-container">
-    <input type="number" class="code" placeholder="0" min="0" max="9" required>
-    <input type="number" class="code" placeholder="0" min="0" max="9" required>
-    <input type="number" class="code" placeholder="0" min="0" max="9" required>
-    <input type="number" class="code" placeholder="0" min="0" max="9" required>
-    <input type="number" class="code" placeholder="0" min="0" max="9" required>
-    <input type="number" class="code" placeholder="0" min="0" max="9" required>
-  </div>
-  <small class="info">
-    This is design only. We didn't actually send you an email as we don't have your email, right?
-  </small>
-</div>
+    <div class="container">
+      <header class="header">
+        <h4 class="title">Live User Filter</h4>
+        <small class="subtitle">Search by name and/or location</small>
+        <input type="text" id="filter" placeholder="Search">
+      </header>
+
+      <ul id="result" class="user-list">
+        <li>
+          <h3>Loading...</h3>
+        </li>
+      </ul>
+    </div>
+      <small class="info">
+        This is design only. We didn't actually send you an email as we don't have your email, right?
+      </small>
+    </div>
 <script src="script.js"></script>
   </body>
 </html>
