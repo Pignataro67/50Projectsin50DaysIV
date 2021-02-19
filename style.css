@@ -42,3 +42,21 @@ input[type='range'] + label {
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+input[type='range']::-webkit-slider-runnable-track {
+  background: purple;
+  border-radius: 4px;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid purple;
+  margin-top: -7px;
+}
