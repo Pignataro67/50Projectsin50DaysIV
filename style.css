@@ -95,3 +95,12 @@ input[type='range']::-ms-track {
   height: 13px;
   cursor: pointer;
 }
+
+/* IE */
+input[type='range']::-ms-track {
+  background: purple;
+  border-radius: 4px;
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+}
