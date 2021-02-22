@@ -27,3 +27,21 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+}
+
+.nav.visible {
+  transform: translate(0);
+}
