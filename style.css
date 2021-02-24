@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
   box-sizing: border-box;
@@ -73,7 +73,7 @@ body {
   margin: 10px 0;
 }
 
-.progress bar {
+.progress-bar {
   background-color: #fff;
   height: 4px;
   width: 100%;
@@ -89,11 +89,10 @@ body {
 
 @media (max-width: 768px) {
   .testimonial-container {
-    padding: 20px
+    padding: 20px 30px
   }
 
   .fa-quote {
     display: none;
   }
 }
-
