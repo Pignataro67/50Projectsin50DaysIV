@@ -1,6 +1,6 @@
 const container = document.querySelector('.container')
 const unsplashURL = 'https://source.unsplash.com/random/'
-const rows = 10
+const rows = 5
 
 for(let i = 0; 1 < rows * 3; i++) {
   const img = document.createElement('img')
@@ -9,7 +9,7 @@ for(let i = 0; 1 < rows * 3; i++) {
 }
 
 function getRandomSize() {
-  return `&{getRandomNr()}x${getRandomNr()}`
+  return `${getRandomNr()}x${getRandomNr()}`
 }
 
 function getRandomNr() {
