@@ -27,6 +27,27 @@ function addTodo(todo) {
   }
 }
 
+function addTodo(todo) {
+  let todoText = input.value
+
+  if(todo) {
+    todoText = todo.text
+  }
+
+  if(todoText) {
+    const todoEl = document.createElement('li')
+  if(todo && todo.completed) {
+    todoEl.classList.add('completed')
+  }
+        
+  todosUL.appendChild(todoEl)
+
+  input.value = ''
+
+    updateLS()
+  }
+}
+
 // const boxesContainer = document.getElementById('boxes')
 // const btn = document.getElementById('btn')
 
