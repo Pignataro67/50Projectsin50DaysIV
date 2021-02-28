@@ -8,6 +8,25 @@ form.addEventListener('submit', (e) => {
   addTodo()
 })
 
+function addTodo(todo) {
+  let todoText = input.value
+
+  if(todo) {
+    todoText = todo.text
+  }
+
+  if(todoText) {
+    const todoEl = document.createElement('li')
+    if(todo && todo.completed) {
+      todoEl.classList.add('completed')
+    }
+
+    todoEl.innerText = todoText
+
+    todosUl.appendChild()
+  }
+}
+
 // const boxesContainer = document.getElementById('boxes')
 // const btn = document.getElementById('btn')
 
