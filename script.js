@@ -1,4 +1,6 @@
+const screens = document.querySelectorAll('.screen')
 
+screens[0].classList.add('up')
 
 // const contents = document.querySelectorAll('.content')
 // const listItems = document.querySelectorAll('nav ul li')
